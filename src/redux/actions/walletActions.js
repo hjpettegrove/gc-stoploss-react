@@ -1,1 +1,0 @@
-export const WALLET_GET_BALANCE = 'WALLET_GET_BALANCE';
