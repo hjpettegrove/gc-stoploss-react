@@ -1,5 +1,5 @@
-import LoginBar from "../MetaMask/LoginBar";
-
+//import LoginBar from "../MetaMask/LoginBar";
+import MetaMaskConnector from "./MetaMaskConnector";
 const MenuBar = () => {
     return ( 
         <div className="container-md d-flex flew-row justify-content-between" >
@@ -24,7 +24,7 @@ const MenuBar = () => {
                     </ul>
                 </div>
             </nav>
-            <LoginBar/>
+            <MetaMaskConnector/>
         </div>
     );
 }
