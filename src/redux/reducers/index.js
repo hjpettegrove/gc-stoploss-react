@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import { wallet } from 'zksync';
-
+import { accountReducer } from './accountReducer';
 import { walletReducer } from './walletReducer';
 
 const reducers = combineReducers({
-    wallet: walletReducer
+    wallet: walletReducer,
+    account: accountReducer,
 })
 
 export default reducers;
