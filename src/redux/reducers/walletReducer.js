@@ -1,9 +1,17 @@
 import { ActionType } from '../constants/walletActions';
-import initialState from '../store/initStore';
+
+const initialState = {
+    wallet: {
+        balance: 0,
+        tokens: [],
+        pairs: []
+    }
+}
+
 
 export const walletReducer = (state = initialState, { type, payload }) => {
     switch(type) {
-        case ActionType.WALLET_GET_BALANCE:
+        case ActionType.WALLET_SET_BALANCE:
             return {...state, wallet: payload}
         default:
             return state;
