@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 //import { useContext } from 'react';
 
 import MenuBar from './components/MenuBar/MenuBar';
-import LoginBar from './components/MetaMask/LoginBar';
 
 import Home from './pages/Home/Home'
 const App = () => {
